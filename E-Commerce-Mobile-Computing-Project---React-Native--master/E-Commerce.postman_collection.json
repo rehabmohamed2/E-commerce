@@ -1,0 +1,1003 @@
+{
+	"info": {
+		"_postman_id": "05b84347-bd46-49e3-95f1-1c43af56adb3",
+		"name": "E-Commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29785663",
+		"_collection_link": "https://social-media-team-7863.postman.co/workspace/E-Commerce-(Mobile-Computing)~6f44de83-7239-4a06-b262-a57d1bf39c53/collection/29785663-05b84347-bd46-49e3-95f1-1c43af56adb3?action=share&source=collection_link&creator=29785663"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Steven Bahaa\",\r\n  \"email\": \"s@gmail.com\",\r\n  \"password\": \"#S123456\",\r\n  \"address\": \"123 Shoubra Street\",\r\n  \"city\": \"Cairo\",\r\n  \"country\": \"Egypt\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Steven Bahaa\",\r\n  \"email\": \"s@gmail.com\",\r\n  \"password\": \"#S123456\",\r\n  \"address\": \"123 Shoubra Street\",\r\n  \"city\": \"Cairo\",\r\n  \"country\": \"Egypt\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"signup"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "275"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"113-GVRCgDWzUe5tk4ODZPlPFaaW7ZQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:09:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User created successfully\",\n    \"user\": {\n        \"name\": \"Steven Bahaa\",\n        \"email\": \"s@gmail.com\",\n        \"address\": \"123 Shoubra Street\",\n        \"city\": \"Cairo\",\n        \"country\": \"Egypt\",\n        \"_id\": \"681499c090ba1108ea00e3b7\",\n        \"createdAt\": \"2025-05-02T10:09:04.722Z\",\n        \"updatedAt\": \"2025-05-02T10:09:04.722Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"s@gmail.com\",\r\n  \"password\": \"#S123456\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"s@gmail.com\",\r\n  \"password\": \"#S123456\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "266"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10a-bKzX0PjeH0xyK7UpBMgL9Y/BOeI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:11:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login successful\",\n    \"user\": {\n        \"_id\": \"681499c090ba1108ea00e3b7\",\n        \"name\": \"Steven Bahaa\",\n        \"email\": \"s@gmail.com\",\n        \"address\": \"123 Shoubra Street\",\n        \"city\": \"Cairo\",\n        \"country\": \"Egypt\",\n        \"createdAt\": \"2025-05-02T10:09:04.722Z\",\n        \"updatedAt\": \"2025-05-02T10:09:04.722Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "GET Products (Pagination)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products?limit=10&page=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Products (Pagination)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products?limit=10&page=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1125"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"465-Sd3nj7FEW32cz73GewHfOW1wqnk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:16:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"totalCount\": 124,\n    \"results\": 2,\n    \"data\": {\n        \"products\": [\n            {\n                \"_id\": \"678ff978e101f92116120a1f\",\n                \"item_id\": \"634437\",\n                \"title\": \"Faragalla Organic Milk\",\n                \"category\": \"Food\",\n                \"price\": 468.19,\n                \"sales\": 296,\n                \"inventory\": 704,\n                \"rating\": 3.907216495,\n                \"barcode\": \"634437\",\n                \"weight\": 0.56,\n                \"description\": \"An excellent product to meet your requirements.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Food\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a31\",\n                \"item_id\": \"734329\",\n                \"title\": \"Crystal Organic Sesame Oil\",\n                \"category\": \"Food\",\n                \"price\": 874.01,\n                \"sales\": 308,\n                \"inventory\": 692,\n                \"rating\": 3.902912621,\n                \"barcode\": \"734329\",\n                \"weight\": 1.46,\n                \"description\": \"An excellent product to meet your requirements.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Food\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Products (Search)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products?search=organic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "organic"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Products (Search)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products?search=organic",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "organic"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1125"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"465-Sd3nj7FEW32cz73GewHfOW1wqnk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:16:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"totalCount\": 124,\n    \"results\": 2,\n    \"data\": {\n        \"products\": [\n            {\n                \"_id\": \"678ff978e101f92116120a1f\",\n                \"item_id\": \"634437\",\n                \"title\": \"Faragalla Organic Milk\",\n                \"category\": \"Food\",\n                \"price\": 468.19,\n                \"sales\": 296,\n                \"inventory\": 704,\n                \"rating\": 3.907216495,\n                \"barcode\": \"634437\",\n                \"weight\": 0.56,\n                \"description\": \"An excellent product to meet your requirements.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Food\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a31\",\n                \"item_id\": \"734329\",\n                \"title\": \"Crystal Organic Sesame Oil\",\n                \"category\": \"Food\",\n                \"price\": 874.01,\n                \"sales\": 308,\n                \"inventory\": 692,\n                \"rating\": 3.902912621,\n                \"barcode\": \"734329\",\n                \"weight\": 1.46,\n                \"description\": \"An excellent product to meet your requirements.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Food\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "593"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"251-B58+OlH22LzlTz4nh4JtCUZxhI8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:19:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"product\": {\n            \"_id\": \"678ff978e101f92116120a27\",\n            \"item_id\": \"252988\",\n            \"title\": \"Eva Cosmetics Hair Repair Shampoo\",\n            \"category\": \"Cosmetics\",\n            \"price\": 334.57,\n            \"sales\": 262,\n            \"inventory\": 738,\n            \"rating\": 3.908045977,\n            \"barcode\": \"252988\",\n            \"weight\": 1.82,\n            \"description\": \"An excellent product to meet your requirements.\",\n            \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n            \"isAvailable\": true,\n            \"discount\": 0,\n            \"aisle\": \"Unknown\",\n            \"section\": \"Cosmetics\",\n            \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n            \"updatedAt\": \"2025-01-21T19:31:39.511Z\",\n            \"__v\": 0\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Product by ID (_id)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products/678ff978e101f92116120a27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"678ff978e101f92116120a27"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Product by ID (_id)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products/678ff978e101f92116120a27",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"678ff978e101f92116120a27"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "593"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"251-B58+OlH22LzlTz4nh4JtCUZxhI8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:24:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"product\": {\n            \"_id\": \"678ff978e101f92116120a27\",\n            \"item_id\": \"252988\",\n            \"title\": \"Eva Cosmetics Hair Repair Shampoo\",\n            \"category\": \"Cosmetics\",\n            \"price\": 334.57,\n            \"sales\": 262,\n            \"inventory\": 738,\n            \"rating\": 3.908045977,\n            \"barcode\": \"252988\",\n            \"weight\": 1.82,\n            \"description\": \"An excellent product to meet your requirements.\",\n            \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n            \"isAvailable\": true,\n            \"discount\": 0,\n            \"aisle\": \"Unknown\",\n            \"section\": \"Cosmetics\",\n            \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n            \"updatedAt\": \"2025-01-21T19:31:39.511Z\",\n            \"__v\": 0\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Products to related Category",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products?category=Electronics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "Electronics"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Products to related Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products?category=Electronics",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "Electronics"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "14816"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39e0-i8zWb431IqemzVDV5XL30fm1G9o\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:27:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"totalCount\": 124,\n    \"results\": 27,\n    \"data\": {\n        \"products\": [\n            {\n                \"_id\": \"678ff978e101f921161209fc\",\n                \"item_id\": \"240362\",\n                \"title\": \"Apple Smart Watch\",\n                \"category\": \"Electronics\",\n                \"price\": 20100.38,\n                \"sales\": 311,\n                \"inventory\": 689,\n                \"rating\": 4.037735849,\n                \"barcode\": \"240362\",\n                \"weight\": 1.74,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a35\",\n                \"item_id\": \"712497\",\n                \"title\": \"Lenovo ThinkPad Laptop\",\n                \"category\": \"Electronics\",\n                \"price\": 27682.39,\n                \"sales\": 295,\n                \"inventory\": 705,\n                \"rating\": 4.01,\n                \"barcode\": \"712497\",\n                \"weight\": 0.61,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a34\",\n                \"item_id\": \"365460\",\n                \"title\": \"HP Pavilion Laptop\",\n                \"category\": \"Electronics\",\n                \"price\": 33990.47,\n                \"sales\": 278,\n                \"inventory\": 722,\n                \"rating\": 4.168316832,\n                \"barcode\": \"365460\",\n                \"weight\": 0.68,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a15\",\n                \"item_id\": \"493370\",\n                \"title\": \"B.TECH Consumer Electronics\",\n                \"category\": \"Electronics\",\n                \"price\": 22661.93,\n                \"sales\": 263,\n                \"inventory\": 737,\n                \"rating\": 3.98,\n                \"barcode\": \"493370\",\n                \"weight\": 2.75,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a00\",\n                \"item_id\": \"165276\",\n                \"title\": \"Apple MacBook Pro 16-inch\",\n                \"category\": \"Electronics\",\n                \"price\": 49116.9,\n                \"sales\": 333,\n                \"inventory\": 667,\n                \"rating\": 3.99137931,\n                \"barcode\": \"165276\",\n                \"weight\": 0.79,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209f9\",\n                \"item_id\": \"400462\",\n                \"title\": \"Apple iPhone15\",\n                \"category\": \"Electronics\",\n                \"price\": 47397.93,\n                \"sales\": 351,\n                \"inventory\": 649,\n                \"rating\": 4.051724138,\n                \"barcode\": \"400462\",\n                \"weight\": 0.68,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209e9\",\n                \"item_id\": \"405952\",\n                \"title\": \"Samsung Galaxy Tablet\",\n                \"category\": \"Electronics\",\n                \"price\": 49685.13,\n                \"sales\": 332,\n                \"inventory\": 668,\n                \"rating\": 4.009009009,\n                \"barcode\": \"405952\",\n                \"weight\": 0.89,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a3a\",\n                \"item_id\": \"642492\",\n                \"title\": \"Philips Bluetooth Audio System\",\n                \"category\": \"Electronics\",\n                \"price\": 31231.71,\n                \"sales\": 271,\n                \"inventory\": 729,\n                \"rating\": 4,\n                \"barcode\": \"642492\",\n                \"weight\": 1.48,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a36\",\n                \"item_id\": \"436649\",\n                \"title\": \"Sony PlayStation Console\",\n                \"category\": \"Electronics\",\n                \"price\": 11037.56,\n                \"sales\": 322,\n                \"inventory\": 678,\n                \"rating\": 4.102803738,\n                \"barcode\": \"436649\",\n                \"weight\": 0.67,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a19\",\n                \"item_id\": \"896440\",\n                \"title\": \"LG Energy-Efficient Air Conditioner\",\n                \"category\": \"Electronics\",\n                \"price\": 34135.52,\n                \"sales\": 365,\n                \"inventory\": 635,\n                \"rating\": 4.091666667,\n                \"barcode\": \"896440\",\n                \"weight\": 0.81,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209fe\",\n                \"item_id\": \"332837\",\n                \"title\": \"Apple MacBook Pro 13-inch\",\n                \"category\": \"Electronics\",\n                \"price\": 43480.54,\n                \"sales\": 329,\n                \"inventory\": 671,\n                \"rating\": 3.936363636,\n                \"barcode\": \"332837\",\n                \"weight\": 0.87,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209fb\",\n                \"item_id\": \"773352\",\n                \"title\": \"Apple iPhone11\",\n                \"category\": \"Electronics\",\n                \"price\": 35103.95,\n                \"sales\": 346,\n                \"inventory\": 654,\n                \"rating\": 3.982142857,\n                \"barcode\": \"773352\",\n                \"weight\": 0.89,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209fa\",\n                \"item_id\": \"403400\",\n                \"title\": \"Apple iPhone16\",\n                \"category\": \"Electronics\",\n                \"price\": 36704.86,\n                \"sales\": 235,\n                \"inventory\": 765,\n                \"rating\": 4.037974684,\n                \"barcode\": \"403400\",\n                \"weight\": 1.83,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209ea\",\n                \"item_id\": \"999422\",\n                \"title\": \"Samsung Smart TV\",\n                \"category\": \"Electronics\",\n                \"price\": 23017.41,\n                \"sales\": 300,\n                \"inventory\": 700,\n                \"rating\": 3.99,\n                \"barcode\": \"999422\",\n                \"weight\": 1.22,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a38\",\n                \"item_id\": \"289252\",\n                \"title\": \"Microsoft Xbox Series X\",\n                \"category\": \"Electronics\",\n                \"price\": 15157.28,\n                \"sales\": 426,\n                \"inventory\": 574,\n                \"rating\": 3.838028169,\n                \"barcode\": \"289252\",\n                \"weight\": 1.48,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a1c\",\n                \"item_id\": \"958167\",\n                \"title\": \"Toshiba Split Air Conditioner\",\n                \"category\": \"Electronics\",\n                \"price\": 15358.11,\n                \"sales\": 258,\n                \"inventory\": 742,\n                \"rating\": 3.965909091,\n                \"barcode\": \"958167\",\n                \"weight\": 0.69,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209fd\",\n                \"item_id\": \"541168\",\n                \"title\": \"Apple MacBook Air\",\n                \"category\": \"Electronics\",\n                \"price\": 26670.15,\n                \"sales\": 362,\n                \"inventory\": 638,\n                \"rating\": 3.974358974,\n                \"barcode\": \"541168\",\n                \"weight\": 0.54,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209f8\",\n                \"item_id\": \"794761\",\n                \"title\": \"Apple iPhone14\",\n                \"category\": \"Electronics\",\n                \"price\": 22023.33,\n                \"sales\": 397,\n                \"inventory\": 603,\n                \"rating\": 4.052631579,\n                \"barcode\": \"794761\",\n                \"weight\": 0.85,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209f7\",\n                \"item_id\": \"671333\",\n                \"title\": \"Apple iPhone13\",\n                \"category\": \"Electronics\",\n                \"price\": 31669.92,\n                \"sales\": 277,\n                \"inventory\": 723,\n                \"rating\": 4.11827957,\n                \"barcode\": \"671333\",\n                \"weight\": 1.21,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a39\",\n                \"item_id\": \"600958\",\n                \"title\": \"Philips Smart LED TV\",\n                \"category\": \"Electronics\",\n                \"price\": 39792.72,\n                \"sales\": 293,\n                \"inventory\": 707,\n                \"rating\": 3.963963964,\n                \"barcode\": \"600958\",\n                \"weight\": 1.02,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a37\",\n                \"item_id\": \"222909\",\n                \"title\": \"Sony Bravia Television\",\n                \"category\": \"Electronics\",\n                \"price\": 22268.15,\n                \"sales\": 352,\n                \"inventory\": 648,\n                \"rating\": 3.857142857,\n                \"barcode\": \"222909\",\n                \"weight\": 1.76,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a33\",\n                \"item_id\": \"633327\",\n                \"title\": \"Dell Inspiron Laptop\",\n                \"category\": \"Electronics\",\n                \"price\": 33035.04,\n                \"sales\": 292,\n                \"inventory\": 708,\n                \"rating\": 4.031914894,\n                \"barcode\": \"633327\",\n                \"weight\": 0.91,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f92116120a01\",\n                \"item_id\": \"452528\",\n                \"title\": \"Apple iPad\",\n                \"category\": \"Electronics\",\n                \"price\": 23800.02,\n                \"sales\": 325,\n                \"inventory\": 675,\n                \"rating\": 4.108910891,\n                \"barcode\": \"452528\",\n                \"weight\": 0.55,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209ff\",\n                \"item_id\": \"104917\",\n                \"title\": \"Apple MacBook Pro 14-inch\",\n                \"category\": \"Electronics\",\n                \"price\": 25833.18,\n                \"sales\": 321,\n                \"inventory\": 679,\n                \"rating\": 3.971962617,\n                \"barcode\": \"104917\",\n                \"weight\": 1.29,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-01-21T19:31:39.511Z\"\n            },\n            {\n                \"_id\": \"678ff978e101f921161209e8\",\n                \"item_id\": \"202857\",\n                \"title\": \"Samsung Galaxy Smartphone\",\n                \"category\": \"Electronics\",\n                \"price\": 30286.59,\n                \"sales\": 313,\n                \"inventory\": 687,\n                \"rating\": 4.06,\n                \"barcode\": \"202857\",\n                \"weight\": 1.94,\n                \"description\": \"A cutting-edge gadget perfect for modern tech enthusiasts.\",\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-01-21T19:31:39.511Z\",\n                \"updatedAt\": \"2025-04-16T16:33:02.263Z\"\n            },\n            {\n                \"_id\": \"67a93383a891fbb7f55213b7\",\n                \"item_id\": \"s122455\",\n                \"title\": \"I Phone 16 - white\",\n                \"category\": \"Electronics\",\n                \"price\": 40000,\n                \"sales\": 0,\n                \"inventory\": 6,\n                \"rating\": 0,\n                \"barcode\": \"s122455\",\n                \"weight\": 0.4,\n                \"description\": \"I Phone 16 , 8 gb, 256 gb\",\n                \"image\": \"https://res.cloudinary.com/de9norjaa/image/upload/v1739142050/products/products-i-phone-16---white-1739142049181.png\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-02-09T23:00:19.431Z\",\n                \"updatedAt\": \"2025-02-09T23:00:52.742Z\"\n            },\n            {\n                \"_id\": \"67a9354da891fbb7f552163e\",\n                \"item_id\": \"97322\",\n                \"title\": \"LG Smart TV\",\n                \"category\": \"Electronics\",\n                \"price\": 34500,\n                \"sales\": 0,\n                \"inventory\": 4,\n                \"rating\": 0,\n                \"barcode\": \"97322\",\n                \"weight\": 2,\n                \"description\": \"LG Smart TV - UHD - 2024 - AI ThinQ\",\n                \"image\": \"https://res.cloudinary.com/de9norjaa/image/upload/v1739142475/products/products-lg-smart-tv-1739142473555.png\",\n                \"isAvailable\": true,\n                \"discount\": 0,\n                \"aisle\": \"Unknown\",\n                \"section\": \"Electronics\",\n                \"createdAt\": \"2025-02-09T23:07:57.125Z\",\n                \"updatedAt\": \"2025-02-09T23:07:57.125Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get All Categories",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3787"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ecb-HGmymZUzhe39yIZ9Dy1yYoHEA+0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:25:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"results\": 13,\n    \"data\": {\n        \"categories\": [\n            {\n                \"_id\": \"678ffcb7e101f92116120acf\",\n                \"title\": \"Electronics\",\n                \"description\": \"A collection of items related to Electronics.\",\n                \"image\": \"https://wallpapers.com/images/hd/electronics-collection-showcase-98zz80jft2nxwyua-2.png\",\n                \"updatedAt\": \"2025-02-06T03:06:36.824Z\",\n                \"productCount\": 27\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120acd\",\n                \"title\": \"Footwear\",\n                \"description\": \"A collection of items related to Footwear.\",\n                \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjd8rxYq49rzAlqomduft6RUuwbSTrFDKovWjObkQ76I7b0O65kYQlK1zJhWDQXQtyZWc&usqp=CAU\",\n                \"updatedAt\": \"2025-02-06T03:07:35.896Z\",\n                \"productCount\": 3\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad1\",\n                \"title\": \"Home Improvement\",\n                \"description\": \"A collection of items related to Home Improvement.\",\n                \"image\": \"https://png.pngtree.com/png-vector/20221224/ourmid/pngtree-home-renovation-and-repairing-concept-png-image_6535885.png\",\n                \"updatedAt\": \"2025-02-06T03:10:35.261Z\",\n                \"productCount\": 8\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad3\",\n                \"title\": \"Beverages\",\n                \"description\": \"A collection of items related to Beverages.\",\n                \"image\": \"https://wallpapers.com/images/hd/assorted-beverage-collection-rd62xijvvp60dj3l.png\",\n                \"updatedAt\": \"2025-02-06T03:25:24.798Z\",\n                \"productCount\": 5\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad4\",\n                \"title\": \"Snacks\",\n                \"description\": \"A collection of items related to Snacks.\",\n                \"image\": \"https://www.pngplay.com/wp-content/uploads/13/Snack-Background-PNG-Image.png\",\n                \"updatedAt\": \"2025-02-06T03:26:05.915Z\",\n                \"productCount\": 4\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad5\",\n                \"title\": \"Appliances\",\n                \"description\": \"A collection of items related to Appliances.\",\n                \"image\": \"https://www.pngall.com/wp-content/uploads/11/Home-Appliance-Background-PNG.png\",\n                \"updatedAt\": \"2025-02-06T03:27:10.344Z\",\n                \"productCount\": 6\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad8\",\n                \"title\": \"HairCare\",\n                \"description\": \"A collection of items related to HairCare.\",\n                \"image\": \"https://png.pngtree.com/png-vector/20230808/ourmid/pngtree-hair-products-vector-png-image_6942541.png\",\n                \"updatedAt\": \"2025-02-06T03:41:49.329Z\",\n                \"productCount\": 6\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad9\",\n                \"title\": \"Health\",\n                \"description\": \"A collection of items related to Health.\",\n                \"image\": \"https://www.clipartmax.com/png/full/172-1727557_the-broad-scope-of-digital-health-includes-categories-health-information-technology-clipart.png\",\n                \"updatedAt\": \"2025-02-06T03:44:05.247Z\",\n                \"productCount\": 2\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad6\",\n                \"title\": \"Food\",\n                \"description\": \"A collection of items related to Food.\",\n                \"image\": \"https://v.cdn.ww.com/media/system/cms/au/WeightWatchers_ZeroPoint_food_categories.png\",\n                \"updatedAt\": \"2025-02-06T03:29:37.444Z\",\n                \"productCount\": 25\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ace\",\n                \"title\": \"Clothing\",\n                \"description\": \"A collection of items related to Clothing.\",\n                \"image\": \"https://img.freepik.com/premium-photo/stack-colourful-t-shirt-hanging-fashion-department-store-shopping-mall_33874-272.jpg?w=360\",\n                \"updatedAt\": \"2025-02-06T03:08:25.530Z\",\n                \"productCount\": 8\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad0\",\n                \"title\": \"Books\",\n                \"description\": \"A collection of items related to Books.\",\n                \"image\": \"https://images.ctfassets.net/gc0d9ikt3p7m/3l36hjq8yYSkSqQyrqm4Af/bd635fb19aeda09b81bed9eb279388df/lucrative-genres-for-authors.png\",\n                \"updatedAt\": \"2025-02-06T03:09:12.922Z\",\n                \"productCount\": 6\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad2\",\n                \"title\": \"Furniture\",\n                \"description\": \"A collection of items related to Furniture.\",\n                \"image\": \"https://cdn.amishcraftedfurniture.net/wp-content/uploads/2025/04/Black-Horse-Furniture-Krowndale-Collection-600x450.jpg\",\n                \"updatedAt\": \"2025-02-06T03:22:12.053Z\",\n                \"productCount\": 6\n            },\n            {\n                \"_id\": \"678ffcb7e101f92116120ad7\",\n                \"title\": \"Cosmetics\",\n                \"description\": \"A collection of items related to Cosmetics.\",\n                \"image\": \"https://skyatransdermic.com/cdn/shop/articles/Top_10_Cosmetic_Companies_in_Uganda.jpg?v=1734583296\",\n                \"updatedAt\": \"2025-02-06T03:37:13.332Z\",\n                \"productCount\": 18\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "cartTransaction",
+			"item": [
+				{
+					"name": "Checkout",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Steven Bahaa\",\r\n  \"email\": \"s@gmail.com\",\r\n  \"location\": \"123 Shoubra St, Cario, Egypt\",\r\n  \"cartItems\": [\r\n    {\r\n      \"_id\": \"678ff978e101f92116120a1f\",\r\n      \"quantity\": 3\r\n    },\r\n    {\r\n      \"_id\": \"678ff978e101f92116120a31\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/cart/checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cart",
+								"checkout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Checkout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Steven Bahaa\",\r\n  \"email\": \"s@gmail.com\",\r\n  \"location\": \"123 Shoubra St, Cario, Egypt\",\r\n  \"cartItems\": [\r\n    {\r\n      \"_id\": \"678ff978e101f92116120a1f\",\r\n      \"quantity\": 3\r\n    },\r\n    {\r\n      \"_id\": \"678ff978e101f92116120a31\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/cart/checkout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"cart",
+										"checkout"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "796"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31c-lHKOeq8XGX9WdvBMhzjE1gYEKX4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:30:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Transaction completed\",\n    \"transaction\": {\n        \"user\": {\n            \"name\": \"Steven Bahaa\",\n            \"email\": \"s@gmail.com\",\n            \"location\": \"123 Shoubra St, Cario, Egypt\"\n        },\n        \"products\": [\n            {\n                \"productId\": \"678ff978e101f92116120a1f\",\n                \"title\": \"Faragalla Organic Milk\",\n                \"price\": 468.19,\n                \"quantity\": 3,\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"_id\": \"68149ec01926ec6faf3c3495\"\n            },\n            {\n                \"productId\": \"678ff978e101f92116120a31\",\n                \"title\": \"Crystal Organic Sesame Oil\",\n                \"price\": 874.01,\n                \"quantity\": 1,\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"_id\": \"68149ec01926ec6faf3c3496\"\n            }\n        ],\n        \"total\": 2278.58,\n        \"_id\": \"68149ec01926ec6faf3c3494\",\n        \"createdAt\": \"2025-05-02T10:30:24.109Z\",\n        \"updatedAt\": \"2025-05-02T10:30:24.109Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all transactions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/cart/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cart",
+								"transaction"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all transactions",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/cart/transaction",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"cart",
+										"transaction"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "748"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2ec-IpjyGqmFYCdNu/C9VWTCHeO9Gl0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:35:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"user\": {\n            \"name\": \"Steven Bahaa\",\n            \"email\": \"s@gmail.com\",\n            \"location\": \"123 Shoubra St, Cario, Egypt\"\n        },\n        \"_id\": \"68149ec01926ec6faf3c3494\",\n        \"products\": [\n            {\n                \"productId\": \"678ff978e101f92116120a1f\",\n                \"title\": \"Faragalla Organic Milk\",\n                \"price\": 468.19,\n                \"quantity\": 3,\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"_id\": \"68149ec01926ec6faf3c3495\"\n            },\n            {\n                \"productId\": \"678ff978e101f92116120a31\",\n                \"title\": \"Crystal Organic Sesame Oil\",\n                \"price\": 874.01,\n                \"quantity\": 1,\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"_id\": \"68149ec01926ec6faf3c3496\"\n            }\n        ],\n        \"total\": 2278.58,\n        \"createdAt\": \"2025-05-02T10:30:24.109Z\",\n        \"updatedAt\": \"2025-05-02T10:30:24.109Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Transaction by ID (_id)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/cart/transaction/68149ec01926ec6faf3c3494",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cart",
+								"transaction",
+								"68149ec01926ec6faf3c3494"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Transaction by ID (_id)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/cart/transaction/68149ec01926ec6faf3c3494",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"cart",
+										"transaction",
+										"68149ec01926ec6faf3c3494"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "762"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2fa-IbDNe0qQxhOT3PvSUt76aPaQVVY\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 02 May 2025 10:35:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"transaction\": {\n        \"user\": {\n            \"name\": \"Steven Bahaa\",\n            \"email\": \"s@gmail.com\",\n            \"location\": \"123 Shoubra St, Cario, Egypt\"\n        },\n        \"_id\": \"68149ec01926ec6faf3c3494\",\n        \"products\": [\n            {\n                \"productId\": \"678ff978e101f92116120a1f\",\n                \"title\": \"Faragalla Organic Milk\",\n                \"price\": 468.19,\n                \"quantity\": 3,\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"_id\": \"68149ec01926ec6faf3c3495\"\n            },\n            {\n                \"productId\": \"678ff978e101f92116120a31\",\n                \"title\": \"Crystal Organic Sesame Oil\",\n                \"price\": 874.01,\n                \"quantity\": 1,\n                \"image\": \"https://img.freepik.com/premium-vector/black-icon-open-cardboard-box-receive-your-order_124715-2429.jpg\",\n                \"_id\": \"68149ec01926ec6faf3c3496\"\n            }\n        ],\n        \"total\": 2278.58,\n        \"createdAt\": \"2025-05-02T10:30:24.109Z\",\n        \"updatedAt\": \"2025-05-02T10:30:24.109Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
